@@ -1,0 +1,12 @@
+{{#if billDetails}}
+  <h5>Introduced On:{{bill.introduced_on}}</h5>
+  <h5>Last Active On: {{bill.last_action_at}}</h5>
+  <h5>Bill Number: {{bill.number}} </h5>
+  <h6>Sponsor: {{bill.sponsor.first_name}} {{bill.sponsor.last_name}}</h6>
+  <p>
+  {{bill.summary}}
+  </p>
+  <button {{action 'hideBillDetails'}} class="btn btn-warning" type="button" name="button">Hide</button>
+{{else}}
+  <button {{action 'showBillDetails'}} type="button" name="button">View Details</button>
+{{/if}}

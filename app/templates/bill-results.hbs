@@ -1,0 +1,9 @@
+<h3>Most Recently Active Bills</h3>
+<ul>
+  {{#each model as |bill|}}
+    <li>
+      <h3>{{bill.official_title}}</h3>
+      {{bill-details bill=bill}}
+    </li>
+  {{/each}}
+</ul>

@@ -1,0 +1,10 @@
+<h1>Committee Lookup</h1>
+
+<form>
+  <div class="form-group">
+    <label for="name">Committee Name</label>
+    {{input value=name id="name"}}
+  </div>
+
+  <button class="btn btn-primary" {{action 'committeeLookup'}} type="button">Submit</button>
+</form>
